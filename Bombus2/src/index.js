@@ -31,6 +31,9 @@ app.use(require('./database'));
 app.use(require('./routes/producto'));
 app.use(require('./routes/usuario'));
 app.use(require('./routes/carritocompras'));
+app.use(require('./routes/categoria'));
+app.use(require('./routes/direcciones'));
+app.use(require('./routes/tarjetacredito'));
 
 
 
