@@ -34,6 +34,7 @@ app.use(require('./routes/carritocompras'));
 app.use(require('./routes/categoria'));
 app.use(require('./routes/direcciones'));
 app.use(require('./routes/tarjetacredito'));
+app.use(require('./routes/roles'));
 
 
 
