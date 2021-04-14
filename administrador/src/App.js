@@ -7,10 +7,12 @@ import {
   NavLink,
 } from "react-router-dom";
 
-import HomeScreen from './Components/Home'
-import UserScreen from './Components/Users'
-import RolsScreen from './Components/Rols'
-import ProductsScreen from './Components/Products'
+import HomeScreen from './Screen/Home'
+import UserScreen from './Screen/Users'
+import RolsScreen from './Screen/Rols'
+import ProductsScreen from './Screen/Products'
+import CategoriesScreen from './Screen/Categories'
+import VentasScreen from './Screen/Ventas'
 
 import logo from './asset/Captura.PNG'
 
@@ -43,10 +45,22 @@ export default function App() {
             <div class="navbar-item">
               <NavLink to="/users">Usuarios</NavLink>
             </div>
+            <div class="navbar-item">
+              <NavLink to="/categories">Categorias</NavLink>
+            </div>
+            <div class="navbar-item">
+              <NavLink to="/ventas">Ventas</NavLink>
+            </div>
           </div>
         </div>
         </nav>
         <Switch>
+        <Route path="/ventas">
+            <VentasScreen />
+          </Route>
+        <Route path="/categories">
+            <CategoriesScreen />
+          </Route>
           <Route path="/users">
             <UserScreen />
           </Route>
